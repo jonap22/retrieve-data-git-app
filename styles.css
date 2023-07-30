@@ -1,0 +1,14 @@
+.image-container {
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 80px;
+}
+
+.image-container img {
+    width: auto;
+    height: 80px;
+}
