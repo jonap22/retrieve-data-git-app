@@ -1,0 +1,74 @@
+[
+    {
+        "stargazers_count": 6,
+        "description": "Planning poker for distributed teams using Pivotal Tracker.",
+        "name": "pivotal_planning_poker",
+        "url": "https://api.github.com/repos/stackbuilders/pivotal_planning_poker"
+    },
+    {
+        "stargazers_count": 8,
+        "description": "Push to your project the right way",
+        "name": "propel",
+        "url": "https://api.github.com/repos/stackbuilders/propel"
+    },
+    {
+        "stargazers_count": 7,
+        "description": "Stub shell environment for your rspec test suite.",
+        "name": "stub_shell",
+        "url": "https://api.github.com/repos/stackbuilders/stub_shell"
+    },
+    {
+        "stargazers_count": 18,
+        "description": "Quick Rails app configuration",
+        "name": "railblazer",
+        "url": "https://api.github.com/repos/stackbuilders/railblazer"
+    },
+    {
+        "stargazers_count": 17,
+        "description": "Haskell library for retrieving and linkifying a Twitter user timeline.",
+        "name": "twitter-feed",
+        "url": "https://api.github.com/repos/stackbuilders/twitter-feed"
+    },
+    {
+        "stargazers_count": 36,
+        "description": "Rails-like inflections for Haskell",
+        "name": "inflections-hs",
+        "url": "https://api.github.com/repos/stackbuilders/inflections-hs"
+    },
+    {
+        "stargazers_count": 100,
+        "description": "Deploy tool for Haskell applications, like Capistrano for Rails",
+        "name": "hapistrano",
+        "url": "https://api.github.com/repos/stackbuilders/hapistrano"
+    },
+    {
+        "stargazers_count": 7,
+        "description": "Checks a sshd_config file for adherence to security best practices",
+        "name": "sshd-lint",
+        "url": "https://api.github.com/repos/stackbuilders/sshd-lint"
+    },
+    {
+        "stargazers_count": 17,
+        "description": "API wrapper for Github's API in Haskell with tests",
+        "name": "octohat",
+        "url": "https://api.github.com/repos/stackbuilders/octohat"
+    },
+    {
+        "stargazers_count": 18,
+        "description": "Writes files atomically in Haskell while preserving permissions",
+        "name": "atomic-write",
+        "url": "https://api.github.com/repos/stackbuilders/atomic-write"
+    },
+    {
+        "stargazers_count": 59,
+        "description": "Load environment variables from dotenv files for Haskell",
+        "name": "dotenv-hs",
+        "url": "https://api.github.com/repos/stackbuilders/dotenv-hs"
+    },
+    {
+        "stargazers_count": 20,
+        "description": "Control SSH access to your servers via GitHub teams",
+        "name": "openssh-github-keys",
+        "url": "https://api.github.com/repos/stackbuilders/openssh-github-keys"
+    }
+]

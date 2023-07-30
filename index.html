@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Project #4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="image-container mb-4 mt-4 ">
+                <img alt="Stack Builders company logo" src="assets/stack.png"/>
+            </div>
+            <h1 class="display-4 mb-5 text-center">Pet Project #4</h1>
+            <div class="d-flex mb-4">
+                <button class="btn btn-success mx-auto" id="btnRankedRepos" onclick="setRankedReposOnScreen()">
+                    Get Best Repositories
+                </button>
+
+                <button class="btn btn-danger mx-auto" id="btnLatestRepositories" onclick="setLatestReposOnScreen()">
+                    Get Latest Repositories
+                </button>
+
+                <button class="btn btn-primary mx-auto" id="btnStars" onclick="setTotalStarsOnScreen()">
+                    Total Repositories Stars
+                </button>
+            </div>
+
+            <div id="repositoryContainer">
+                <div id="repositoryContent">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="./app/api.js"></script>
+</body>
+
+</html>
