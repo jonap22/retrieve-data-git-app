@@ -23,19 +23,24 @@ async function retrieveDataFromAPI() {
     return myRepos;
 }
 
+function getHTMLTemplate(repo) {
+    const template =  `
+        <ul class="list-group mb-3 mx-auto">
+            <li class="list-group-item"><strong>Repository name:</strong> ${repo.name}</li>
+            <li class="list-group-item"><strong>Created on:</strong> ${getFormattedDate(repo.created_at)}</li>
+            <li class="list-group-item"><strong>Description:</strong> ${repo.description}</li>
+            <li class="list-group-item"><strong>Stars number:</strong> ${repo.stargazers_count}</li>
+            <li class="list-group-item"><strong>Repo URL:</strong> ${repo.url}</li>
+        </ul>
+    `
+    return template;
+}
+
 function concatRankedReposOnHTML(data, htmlOutput) {
     data
         .filter(repo => repo.stargazers_count > 5)
         .map(repo => {
-            htmlOutput += `
-            <ul class="list-group mb-3 mx-auto">
-                <li class="list-group-item"><strong>Repository name:</strong> ${repo.name}</li>
-                <li class="list-group-item"><strong>Created on:</strong> ${getFormattedDate(repo.created_at)}</li>
-                <li class="list-group-item"><strong>Description:</strong> ${repo.description}</li>
-                <li class="list-group-item"><strong>Stars number:</strong> ${repo.stargazers_count}</li>
-                <li class="list-group-item"><strong>Repo URL:</strong> ${repo.url}</li>
-            </ul>
-        `
+            htmlOutput += getHTMLTemplate(repo);
         });
 
     document.getElementById('repositoryContent').innerHTML = htmlOutput;
@@ -52,22 +57,13 @@ function getFormattedDate(date) {
 }
 
 function concatLatestReposOnHTML(data, htmlOutput) {
-    // Sort repositories based on the created_at attribute in descending order (latest first)
     const sortedRepos = data.sort(
         (a, b) => new Date(b.created_at) - new Date(a.created_at)
     );
     const latestRepos = sortedRepos.slice(0, 5);
     latestRepos
         .map(repo => {
-            htmlOutput += `
-            <ul class="list-group mb-3 mx-auto">
-                <li class="list-group-item"><strong>Repository name:</strong> ${repo.name}</li>
-                <li class="list-group-item"><strong>Created on:</strong> ${getFormattedDate(repo.created_at)}</li>
-                <li class="list-group-item"><strong>Description:</strong> ${repo.description}</li>
-                <li class="list-group-item"><strong>Stars number:</strong> ${repo.stargazers_count}</li>
-                <li class="list-group-item"><strong>Repo URL:</strong> ${repo.url}</li>
-            </ul>
-        `
+            htmlOutput += getHTMLTemplate(repo);
         });
 
     document.getElementById('repositoryContent').innerHTML = htmlOutput;

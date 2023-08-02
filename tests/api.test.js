@@ -1,6 +1,6 @@
 const { sumRepositoriesStars, getFormattedDate, getFormattedData } = require("../app/api");
 
-test('getFormattedData return formatted api data', async () => {
+test('getFormattedData returns formatted api data', async () => {
   const responseData = [
     { stargazers_count: 10, description: 'Repo 1', name: 'repo1', created_at: '2010-12-17T04:19:18Z', url: 'https://github.com/repo1', atr: 'atr' },
     { stargazers_count: 5, description: 'Repo 2', name: 'repo2', created_at: '2023-07-28T12:00:00Z', url: 'https://github.com/repo2', atr: 'atr' },
